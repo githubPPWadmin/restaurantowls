@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestaurantDiaz</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo" >RestaurantDiaz</h1>
+            </div>
+            <div class="main-header__contactinfo column column--50">
+                <p class="main-header__contactinfo__phone">
+                    <span class="">987654321</span>   
+                </p>
+                <p class="main-header__contactinfo_address">
+                    <span class="">Jr. Arequipa 432</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <img src="img/logo-menu.png" alt="" class="icon-menu" id="btnmenu">
+            
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link menu__link--select">Contacto</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section class="banner">
+        <ul>    
+            <li><img src="img/img1.jpg" alt="" class="banner__img"></li>
+            <li><img src="img/img2.jpg" alt="" class="banner__img"></li>
+            <li><img src="img/img3.jpg" alt="" class="banner__img"></li>
+        </ul>
+
+
+        <div class="banner__content">Dejenos un Mensaje</div>
+    </section>
+
+    <main class="main">        
+            <h2 class="group__title group__title__contact">Contactenos</h2>  
+        <section class="container__contact">
+            <div class="contact__3d">
+                <div class="lado front">
+                    <div class="contact-information">
+                        <h3 class="column__title">Informacion de Contacto</h3>
+                        <p class="column__txt">Si quieres información sobre cualquiera 
+                            de nuestros servicios rellena nuestro formulario y nos pondremos en 
+                            contacto contigo lo mas pronto posible. <br>
+                            Muchas gracias.
+                        </p>
+                        <p class="column__txt">telefono: 99765432</p>
+                        <p class="column__txt">telefono: 97654123</p>
+                        <p class="column__txt">Jr. Arequipa 432</p> 
+                        <p class="column__txt">restaurantdiaz@gmail.com</p>
+                    </div>
+                </div>
+                <div class="lado back">
+                    <form action="enviar-prueba.php" method="POST" class="formulario">
+                        <label for="" class="formulario__label">Nombre:</label>
+                        <input type="text" class="formulario__input-txt" name="nombre">
+                        <label for="" class="formulario__label">Correo:</label>
+                        <input type="text" class="formulario__input-txt" name="correo">
+                        <label for="" class="formulario__label">Telefono:</label>
+                        <input type="text" class="formulario__input-txt" name="telefono">
+                        <label for="" class="formulario__label">Mensaje:</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea" ></textarea>
+                        <input type="submit" class="btn formulario__btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Porqué visitarnos?</h2>
+                <p class="column__txt">Somos un restaurante dedicados a lo que 
+                    hacemos, siempre al pendiente de las necesidades de nuestros 
+                    clientes.
+                </p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contactanos</h2>
+                <p class="column__txt">restaurantdiaz.com</p>
+                <p class="column__txt">Telefono=98754321</p>
+                <p class="column__txt">restaurantdiaz@agmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Siguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="" class="">Facebook</a></p>
+                <p class="column__txt"><a href="" class="">Twitter</a></p>
+                <p class="column__txt"><a href="" class="">Youtube</a></p>
+            </div>
+            <p class="copy">Todos los Derechos Reservados ©RestaurantDiaz</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
